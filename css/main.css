@@ -1,0 +1,295 @@
+/*********************************************
+    KADIYA - This is an online to do list program
+    Copyright (C) 2014  Charith Jayasekar@LightHole
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+	
+	Email - charithdula@gmail.com
+**********************************************/
+#maroonbox{
+height:50px;
+//background-color:#7E0416;
+}
+
+html, body {
+margin:0px;
+padding:0px;
+border:0px;
+}
+
+#lighthole_logo{
+margin-left:20px;
+background-image:url("../images/lighthole.png");
+width:60px;
+height:60px;
+display:block;
+margin-top: 10px;
+}
+
+#contents{
+margin-top:20px;
+}
+
+#inner_content{
+margin-left:220px;
+padding: 20px;
+width: 100%;
+background-color:#fff;
+//height:600px;
+position:relative;
+border-radius: 5px;
+margin-top: 40px;
+box-shadow: 1px 1px 6px #C4C0C0;
+}
+
+#task_list {
+  position: relative;
+  width: 650px;
+  margin-left: 60px;
+}
+
+#input_box{
+position:relative;
+padding:10px;
+width:auto;
+height:51px;
+//background-color:#20C3FF;
+margin-bottom:20px;
+margin-top: 20px;
+}
+
+textarea {
+resize:none;
+width:72%;
+height:50px;
+font-size:2em;
+font-weight:bold;
+font-style:Sans-Serif;
+border:none;
+float:left;
+font-family:Segoe UI,Tahoma,Arial,Verdana,sans-serif;
+border: 1px solid #C4C0C0;
+}
+
+#button_set{
+width:160px;
+height:60px;
+position:absolute;
+right:5px;
+margin-top:2px;
+
+}
+
+#button_set .action{
+list-style-type:none;
+width:150px;
+height:50px;
+padding:0px;
+margin:0px;
+margin-top:2px;
+display:inline;
+}
+form {
+position:relative;
+}
+
+#paint_but{
+display:block;
+float:left;
+background: #FD1B4B;
+background: -webkit-gradient(linear,left bottom,left top,color-stop(0,#DF1454),color-stop(1,#FD1B4B));
+background: -ms-linear-gradient(bottom,#DF1454,#FD1B4B);
+background: -moz-linear-gradient(center bottom,#DF1454 0%,#FD1B4B 100%);
+background: -o-linear-gradient(#DF1454,#FD1B4B);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#DF1454', endColorstr='#FD1B4B', GradientType=0);
+width:50px;
+height:50px;
+margin-right:4px;
+border-radius:5px;
+}
+
+#length_but{
+display:block;
+float:left;
+background: #FD1B4B;
+background: -webkit-gradient(linear,left bottom,left top,color-stop(0,#DF1454),color-stop(1,#FD1B4B));
+background: -ms-linear-gradient(bottom,#DF1454,#FD1B4B);
+background: -moz-linear-gradient(center bottom,#DF1454 0%,#FD1B4B 100%);
+background: -o-linear-gradient(#DF1454,#FD1B4B);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#DF1454', endColorstr='#FD1B4B', GradientType=0);
+border-radius: 5px;
+width:50px;
+height:50px;
+margin-right:4px;
+text-align:center;
+font-size:30px;
+border:5px;
+}
+
+#length_but:active {
+ color:yellow;
+}
+#length_but span{
+   display:block;
+   margin-top:2px;
+   margin-right:2px;
+   font-family:Segoe UI,Tahoma,Arial,Verdana,sans-serif;
+   font-weight:bold;
+   color:#fff;
+   cursor:default;
+}
+
+#add_but span{
+   display:block;
+   margin-top:2px;
+   margin-right:2px;
+   font-family:Segoe UI,Tahoma,Arial,Verdana,sans-serif;
+   font-weight:bold;
+   color:#fff;
+   cursor:default;
+}
+
+#add_but{
+display:block;
+float:left;
+background: #FD1B4B;
+background: -webkit-gradient(linear,left bottom,left top,color-stop(0,#DF1454),color-stop(1,#FD1B4B));
+background: -ms-linear-gradient(bottom,#DF1454,#FD1B4B);
+background: -moz-linear-gradient(center bottom,#DF1454 0%,#FD1B4B 100%);
+background: -o-linear-gradient(#DF1454,#FD1B4B);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#DF1454', endColorstr='#FD1B4B', GradientType=0);
+border-radius: 5px;
+width:50px;
+height:50px;
+text-align:center;
+font-size:30px;
+}
+
+.task {
+position:relative;
+background-color:#FFD820;
+box-shadow:1px 1px 6px #C4C0C0;
+border-radius:0.5em;
+padding:10px;
+padding-left:20px;
+margin-bottom:10px;
+font-family:Segoe UI,Tahoma,Arial,Verdana,sans-serif;
+}
+.date{
+padding:0px;
+margin:0px;
+}
+
+.title{
+padding:0px;
+margin:0px;
+}
+
+.close{
+position:absolute;
+right:10px;
+top:10px;
+display:block;
+width:20px;
+height:20px;
+background-image:url("../images/close.png");
+}
+
+#length_menu{
+top:60px;
+width:140px;
+position:absolute;
+right:0px;
+z-index:100;
+background-color:#fff;
+border-radius:0.5em;
+border-style:solid;
+border-width:5px;
+border-color:#B3B1AC;
+padding:10px;
+display:none;
+}
+
+#length_menu li{
+list-style-type:none;
+width:130px;
+height:15px;
+padding:5px;
+margin:0px;
+margin-top:0px;
+display:block;
+}
+
+#length_menu li a {
+width:120px;
+height:10px;
+margin:5px;
+margin-top:3px;
+display:block;
+background-color:#000;
+}
+
+#length_menu li:hover{
+background-color:#B3B1AC;
+}
+
+.length_bar{
+background-color:#C10303;
+width:240px;
+height:10px;
+position:absolute;
+top:15px;
+right:40px;
+}
+
+#left_pane {
+  position: absolute;
+  top: 120px;
+  height: 500px;
+
+}
+
+#left_pane ul li {
+  list-style: none;
+  display:block;
+  border-top: 1px solid #F3EAEA;
+  padding: 10px;
+  cursor: pointer;
+  font-family: Segoe UI,Tahoma,Arial,Verdana,sans-serif;
+  font-weight: bold;
+}
+
+#left_pane ul li:hover {
+  list-style: none;
+  display:block;
+  border-top: 1px solid #F3EAEA;
+  padding: 10px;
+  cursor: pointer;
+  font-family: Segoe UI,Tahoma,Arial,Verdana,sans-serif;
+  font-weight: bold;
+  background-color: #FD1B4B;
+  color: #fff;
+  border-radius: 3px;
+}
+
+#left_pane ul li:last-child {
+  border-bottom: 1px solid #F3EAEA;
+}
+
+#left_pane ul {
+  margin-left: 0px;
+}
+.kadiya-sub-cat {
+  display: none !important;
+}
